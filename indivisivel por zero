@@ -1,0 +1,15 @@
+public class TesteErro {
+	public static void main(String[] args) throws MinhaException {
+		int num1 = 4;
+		int num2 = 1;
+		System.out.println("Primeiro valor: " + num1);
+		System.out.println("Segundo valor: " + num2);
+		if (num2 == 0) {
+			throw new MinhaException(
+					"Não é possível realizar uma divisão por 0.");
+		}
+		System.out.println("Resultado: ");
+		double result = num1 / num2;
+		System.out.println(num1 + " / " + num2 + " = " + result);
+	}
+}
